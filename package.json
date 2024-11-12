@@ -1,0 +1,40 @@
+{
+  "name": "country-flags",
+  "version": "1.0.0",
+  "description": "A TypeScript library mapping country names and ISO codes to their corresponding flag emoji",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgarrity22/country-flag-emojis.git"
+  },
+  "keywords": [
+    "country-ids",
+    "country flags",
+    "country flag emojis",
+    "alpha2",
+    "alpha3"
+  ],
+  "author": "Kathleen Garrity",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kgarrity22/country-flag-emojis/issues"
+  },
+  "homepage": "https://github.com/kgarrity22/country-flag-emojis#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
