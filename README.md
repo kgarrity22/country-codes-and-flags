@@ -7,6 +7,8 @@ This package provides utilities for
 * retrieving a country's flag emoji, ISO alpha2, and ISO alpha3 codes given the country's name
 * reverse lookups to go from ISO codes or a flag emoji back to a country's name
 
+You can also find the full set of country data [here](https://github.com/kgarrity22/country-codes-and-flags/blob/main/src/country-lookup.ts)
+
 
 ## Installation
 
