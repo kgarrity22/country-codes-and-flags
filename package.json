@@ -16,6 +16,10 @@
     "type": "git",
     "url": "git+https://github.com/kgarrity22/country-codes-and-flags.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "keywords": [
     "country-ids",
     "country flags",
