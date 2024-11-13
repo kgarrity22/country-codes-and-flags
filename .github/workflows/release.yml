@@ -10,6 +10,7 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -26,23 +27,31 @@ jobs:
       - name: Build package
         run: npm run build
 
-      - name: Extract version
-        id: vars
+      - name: Run semantic-release
+        run: npx semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push changes and tags back to repository
         run: |
-          VERSION=$(node -p "require('./package.json').version")
-          echo "PACKAGE_VERSION=$VERSION" >> $GITHUB_ENV
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git push --follow-tags
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release on GitHub
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ env.PACKAGE_VERSION }}
-          name: Release ${{ env.PACKAGE_VERSION }}
+          tag_name: v${{ steps.semantic-release.outputs.version }}
+          name: Release ${{ steps.semantic-release.outputs.version }}
           files: |
             dist/*
           draft: false
           prerelease: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to npm
         run: npm publish
