@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/kgarrity22/country-codes-and-flags/compare/v1.0.2...v1.0.3) (2024-11-13)
+
+
+### Bug Fixes
+
+* prevent double npm publish attempt ([54ed108](https://github.com/kgarrity22/country-codes-and-flags/commit/54ed108d6ad46324e21aaaab4c483fd3afb72049))
+
 ## [1.0.2](https://github.com/kgarrity22/country-codes-and-flags/compare/v1.0.1...v1.0.2) (2024-11-13)
 
 

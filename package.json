@@ -1,6 +1,6 @@
 {
   "name": "country-codes-and-flags",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A TypeScript library mapping country names and ISO codes to their corresponding flag emoji",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
