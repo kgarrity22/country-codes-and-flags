@@ -22,7 +22,10 @@
     "country flag emojis",
     "alpha2",
     "alpha3",
-    "ISO codes"
+    "ISO codes",
+    "country codes",
+    "flag emojis",
+    "flags"
   ],
   "author": "Kathleen Garrity",
   "license": "MIT",
