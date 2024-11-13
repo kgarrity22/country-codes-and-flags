@@ -88,4 +88,7 @@ export const getAllByCountry = (country: string): CountryMetadata | null => {
   return countryData[country] || null;
 };
 
+/**
+ * Get full dataset of countries mapped to their flag and iso codes
+ */
 export const getAll = (): { [key: string]: CountryMetadata } => countryData;
