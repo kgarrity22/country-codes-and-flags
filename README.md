@@ -38,7 +38,7 @@ npm install country-codes-and-flags
 ### Examples
 
 ```typescript
-import {getAllByCountry, getFlagByCountry, getCountryFromFlag} from "country-flag-emojis";
+import {getAllByCountry, getFlagByCountry, getCountryFromFlag} from "country-codes-and-flags";
 
 // Get All Metadata
 const greeceData = getAllByCountry("Greece");

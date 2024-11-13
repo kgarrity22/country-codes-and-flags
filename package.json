@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kgarrity22/country-flag-emojis.git"
+    "url": "git+https://github.com/kgarrity22/country-codes-and-flags.git"
   },
   "keywords": [
     "country-ids",
@@ -30,9 +30,9 @@
   "author": "Kathleen Garrity",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kgarrity22/country-flag-emojis/issues"
+    "url": "https://github.com/kgarrity22/country-codes-and-flags/issues"
   },
-  "homepage": "https://github.com/kgarrity22/country-flag-emojis#readme",
+  "homepage": "https://github.com/kgarrity22/country-codes-and-flags#readme",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
