@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/kgarrity22/country-codes-and-flags/compare/v1.0.1...v1.0.2) (2024-11-13)
+
+
+### Bug Fixes
+
+* trigger release on all push to main ([2f46a4a](https://github.com/kgarrity22/country-codes-and-flags/commit/2f46a4a9b8fefdc3949940f57ee77effdd14af1d))
+
 ## [1.0.1](https://github.com/kgarrity22/country-codes-and-flags/compare/v1.0.0...v1.0.1) (2024-11-13)
 
 
