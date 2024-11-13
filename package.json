@@ -1,6 +1,6 @@
 {
   "name": "country-codes-and-flags",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript library mapping country names and ISO codes to their corresponding flag emoji",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -34,8 +34,13 @@
   },
   "homepage": "https://github.com/kgarrity22/country-flag-emojis#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/npm": "^12.0.1",
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
+    "semantic-release": "^24.2.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "tsup": "^8.3.5",
