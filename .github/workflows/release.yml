@@ -18,20 +18,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18.x"
+          node-version: "20.x"
           registry-url: "https://registry.npmjs.org"
-
-      - name: Clean npm cache
-        run: npm cache clean --force
 
       - name: Install dependencies
         run: npm install
 
       - name: Build package
         run: npm run build
-
-      - name: Check GH_TOKEN
-        run: echo "GH_TOKEN=$GH_TOKEN"
 
       - name: Run semantic-release
         run: npx semantic-release
