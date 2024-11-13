@@ -21,17 +21,18 @@ npm install country-codes-and-flags
 ## Usage
 
 ### Available Methods
-| Function             | Input Type | Input                     | Output                                       |
-|----------------------|------------|---------------------------|----------------------------------------------|
-| `getFlagByCountry`   | `string`   | Country name              | Flag emoji `string` or `null`                |
-| `getFlagByAlpha2`    | `string`   | Two-letter country code   | Flag emoji `string` or `null`                |
-| `getFlagByAlpha3`    | `string`   | Three-letter country code | Flag emoji `string` or `null`                |
-| `getAlpha2ByCountry` | `string`   | Country name              | Two-letter country code `string` or `null`   |
-| `getAlpha3ByCountry` | `string`   | Country name              | Three-letter country code `string` or `null` |
-| `getCountryFromFlag` | `string`   | Flag emoji                | Country name `string` or `null`              |
-| `getCountryByAlpha2` | `string`   | Two-letter country code   | Country name `string` or `null`              |
-| `getCountryByAlpha3` | `string`   | Three-letter country code | Country name `string` or `null`              |
-| `getAllByCountry`    | `string`   | Country name              | `CountryMetadata` object or `null`           |
+| Function             | Input Type | Input                     | Output                                                                                         |
+|----------------------|------------|---------------------------|------------------------------------------------------------------------------------------------|
+| `getFlagByCountry`   | `string`   | Country name              | Flag emoji `string` or `null`                                                                  |
+| `getFlagByAlpha2`    | `string`   | Two-letter country code   | Flag emoji `string` or `null`                                                                  |
+| `getFlagByAlpha3`    | `string`   | Three-letter country code | Flag emoji `string` or `null`                                                                  |
+| `getAlpha2ByCountry` | `string`   | Country name              | Two-letter country code `string` or `null`                                                     |
+| `getAlpha3ByCountry` | `string`   | Country name              | Three-letter country code `string` or `null`                                                   |
+| `getCountryFromFlag` | `string`   | Flag emoji                | Country name `string` or `null`                                                                |
+| `getCountryByAlpha2` | `string`   | Two-letter country code   | Country name `string` or `null`                                                                |
+| `getCountryByAlpha3` | `string`   | Three-letter country code | Country name `string` or `null`                                                                |
+| `getAllByCountry`    | `string`   | Country name              | `CountryMetadata` object or `null`                                                             |
+| `getAll`             | N/A        | none                      | Returns the full dataset (`{ [COUNTRY_NAME: { flag: string; alpha2: string; alpha3: string}}`) |
 
 
 ### Examples

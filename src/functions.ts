@@ -87,3 +87,5 @@ export const getCountryByAlpha3 = (isoCode: string): string | null => {
 export const getAllByCountry = (country: string): CountryMetadata | null => {
   return countryData[country] || null;
 };
+
+export const getAll = (): { [key: string]: CountryMetadata } => countryData;
